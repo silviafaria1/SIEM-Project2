@@ -1,0 +1,979 @@
+/*---------------------TP2 STYLE SHEET----------------------*/
+* {
+  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+
+/* ------------ Comum a todas as páginas ------------------*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+h1{
+  font-size: 22px;
+}
+
+h2{
+  font-size: 20px;
+}
+
+p, a{
+  font-size: 18px;
+  line-height: 20px;
+}
+
+/* Column container */
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+/* 1 coluna*/
+.column1{
+  -ms-flex: 100%; /* IE10 */
+  flex: 100%;
+}
+
+/* 2 colunas*/
+.column2{
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+  text-align: center;
+}
+
+/* 3 colunas*/
+.column3{
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 4 colunas*/
+.column4{
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#error, .pag_pizza_individual .form_pizza #error {color: #FF0000;}
+
+/* -------------- Botão --------------*/
+.button a, .pag_login input[type=submit], .pag_carrinho .button, .button_apagar a, .pag_pizza_individual input[type=submit], .pag_conta input[type=submit], .pag_conta .button{
+  font-size: 15px;
+	font-weight: bold;
+	color: white;
+  background-color: #700000 ;
+	border: none;
+	padding: 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	transition-duration: 0.5s;
+  cursor: pointer;
+  width: 150px;
+}
+
+.button_apagar a{
+  float: right;
+}
+
+.button a:hover, .pag_login input[type=submit]:hover, .pag_conta input[type=submit]:hover, .pag_carrinho .button:hover, .button_apagar a:hover,
+.pag_pizza_individual input[type=submit]:hover, .pag_conta .button:hover{
+	text-decoration: none;
+	color: #aa9696;
+}
+
+.button{
+  background: none;
+  margin: 0% 2%;
+}
+
+.banner{
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  /* set title on the  container middle*/
+  justify-content: center;
+  text-transform: uppercase;
+  max-width: 100%;
+  max-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 250px ;
+  /*text-align: center;*/
+}
+
+.banner h1{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* --------------- NAV MENU -----------------*/
+#pizzas, #como_funcionamos, #sobre_nos, #a_minha_conta, #downloads{
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 3px;
+  text-decoration-color:#990000;
+}
+
+#login, #carrinho{
+  font-weight: bold;
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+  text-transform: uppercase;
+  color:#990000;
+}
+
+.navbar li {
+  float: left;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.meio {
+  margin-top: 30px;
+}
+
+.icone_meio{
+  margin-top: 20px;
+}
+
+.navbar li a {
+  display: block;
+  color: #990000;
+  font-size: 16px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#logo_navbar img{
+  cursor: pointer;
+  width: 100px;
+  margin: 5%;
+  margin-right:25px;
+}
+
+#icones i{
+  font-size: 25px;
+}
+
+.navbar a:hover{
+  color: #aa9696;
+}
+
+/*----------------- FOOTER-------------------*/
+.footer{
+  background-color: #3E0000 ;
+  align-items: flex-start;
+  color: white;
+  height: fit-content;
+  padding-bottom: 0.8vh;
+}
+
+.footer .column4 img{
+  width: 100%;
+  object-fit: cover;
+}
+
+#img_footer{
+  padding: 0px;
+  margin: 0px;
+  height: 0px;
+}
+.footer .column4{
+  padding: 1% 2%;
+}
+
+.footer h1{
+  font-size: 20px;
+  text-transform: uppercase;
+  justify-content: flex-start;
+  text-align: left;
+  margin-bottom: 8%;
+}
+
+.footer p, .footer h2{
+  font-weight: 10px;
+  text-align: left;
+  color: #cccccc;
+  margin-bottom: 2%;
+}
+
+/*--------------------INDEX------------------*/
+.index{
+  background-color: #3E0000 ;
+  color: white;
+}
+
+.index a{
+  text-decoration: none;
+  color: white;
+}
+
+.index img{
+  width: 50%;
+}
+
+.index h1{
+  margin-top: 7%;
+  text-align: center;
+  font-size: 20x;
+}
+
+.background {
+	max-width: 100%;
+	max-height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+  background-size: cover; /*fit image to all page*/
+}
+
+#index{
+  background-image: url("../pics/Banners/banner_index.jpg");
+}
+
+.index_row{
+  margin: 5% 15%;
+}
+
+/*-------------- PAGINA INICIAL ------------------*/
+#background_intro{
+  background-image: url("../pics/Banners/pag_inicial.png");
+}
+
+#background_intro .text{
+  margin-right: 50%;
+  text-align: center;
+}
+
+#background_intro .text h1{
+  font-size: 35px;
+  margin: 2% 0px;
+}
+
+/*Diagrama com setas*/
+#arrow {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 5%;
+}
+
+#arrow li {
+  padding: 25px 30px;
+  border-radius: 25px;
+  border: 5px solid #640000;
+  margin: 0 60px;
+  position: relative;
+  width: 220px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#arrow li:not(:last-child):after {
+  content: '';
+  height: 5px;
+  background: #640000;
+  width: 120px;
+  position: absolute;
+  right: -120px;
+  top: 50%;
+}
+
+#arrow li:not(:last-child):before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 54%;
+  border-style: solid;
+  border-width: 10px 0 12px 25px;
+  border-color: transparent transparent transparent #640000;
+  right: -127px;
+  transform: translateY(-50%);
+}
+
+/*-------------- Como Funcionamos ------------*/
+#como_funcionamos_banner{
+  background-image: url("../pics/Banners/Imagem3.png");
+}
+
+.bottom {
+  margin-bottom: 3%;
+}
+
+.info h2{
+  margin-top: 4%;
+  text-align: center;
+  color: #303030;
+}
+
+.info p{
+  margin: 1% 20%;
+  text-align: center;
+  color: #858585;
+}
+
+.info img{
+  width: 50%;
+  display: block;
+  margin:5% 25%;
+}
+
+.box-container {
+  position: relative;
+  color: #640000;
+}
+
+/*Linha entra grupos de texto*/
+.line:after {
+  content: '';
+  position: absolute;
+  left: 41%;
+  top: auto;
+  bottom: -12%;
+  right: auto;
+  height: 2.5px;
+  width: 250px;
+  background-color: #640000;
+}
+
+/*-------------- Sobre nós -------------*/
+#sobre_nos_banner{
+  background-image: url("../pics/Banners/banner_sobre_nos.png");
+}
+
+/*-------------- Login ------------*/
+#login_banner{
+  background-image: url("../pics/Banners/banner_login2.jpg");
+}
+
+.pag_login h1{
+  font-family: Montserrat;
+  color: #660000;
+  text-decoration: bold;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.pag_login{
+  margin: 25px 1px 25px 30px;
+}
+
+.pag_login label, .pag_conta label{
+  font-family: Montserrat;
+  text-align: left;
+  font-size: 15px;
+  color: #660000;
+}
+
+.pag_login input[type=text], .pag_conta input[type=text], .pag_login input[type=password], .pag_conta input[type=password]{
+  width: 40%;
+  padding: 5px 50px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #660000;
+  box-sizing: border-box;
+  padding-left: 3px;
+}
+
+.pag_login input[type=submit], .pag_conta input[type=submit] {
+  margin: 5px 0px 30px 0px;
+}
+
+/*-------------- Carrinho ------------*/
+#carrinho_banner{
+  background-image: url("../pics/Banners/banner_carrinho.jpg");
+}
+
+.pag_carrinho{
+  display: table;
+  margin: 0 auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.pag_carrinho .xbutton{
+  background-color: white;
+  cursor: pointer;
+}
+
+.pag_carrinho .linha{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 2%;
+}
+
+.pag_carrinho img{
+  width: 45%;
+  height: auto;
+  padding: 5%;
+}
+
+.labels th, .total{
+  color: #660000;
+  font-size: 20px;
+  font-weight: normal;
+  padding-bottom: 1%;
+}
+
+.pag_carrinho i{
+  color: #660000;
+  font-size: 25px;
+}
+
+.pag_carrinho table{
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.pag_carrinho table .tamanho_primeira_coluna{
+  width: 25%;
+}
+
+.pag_carrinho table .outras_colunas{
+  width: 10%;
+}
+
+.pag_carrinho th{
+  border-bottom: 2px solid #660000;
+  font-weight: normal;
+}
+
+.pag_carrinho .ultima_linha_tabela th, #ultima_linha th, #ultima_linha td{
+  border-bottom: none;
+  padding: 1%;
+}
+
+.pag_carrinho .center_left{
+  float: right;
+  margin: 0;
+  margin-top: 2%;
+}
+
+.button .a{
+  padding: 0;
+  margin: 0;
+
+}
+
+.pag_carrinho .input_number, .formulario_pizza input[type=number]{
+ border: 1px solid #989898;
+ width: 25%;
+ padding: 5px;
+ text-align: center;
+}
+
+/*Setas em input type number*/
+.pag_carrinho .input_number::-webkit-inner-spin-button,
+.pag_carrinho .input_number::-webkit-outer-spin-button,
+.formulario_pizza input[type=number]::-webkit-inner-spin-button,
+.formulario_pizza input[type=number]::-webkit-outer-spin-button{
+   opacity: 1;
+}
+
+.button_apagar {
+  margin-bottom: 3%;
+}
+
+/*--------------Carrinho Finalizar--------------*/
+/* Add padding to container elements */
+.container{
+  display: table;
+  margin: 0 auto;
+  margin-top: 4%;
+}
+
+.container h1{
+  margin-bottom: 7%;
+  text-align: center;
+  color: #660000;
+}
+
+.container span{
+  text-align: center;
+  color: black;
+}
+
+.radio_style, .form_ingrediente{
+  display: table;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.radio_altura{
+  margin-bottom: 15%;
+}
+
+.button_center{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+/*Modal*/
+.modal {
+  display: none; /*Escondido por default*/
+  position: fixed;
+  z-index: 1; /*No topo da pagina*/
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: inherit; /*Permitir scroll ou não*/
+  background-color: rgba(121, 117, 116, 0.5);
+  padding-top: 50px;
+}
+
+
+/*Modal Content/Box*/
+.modal-content {
+  background-color: white;
+  margin: 5% auto 15% auto;
+  border: 2px solid #660000;
+  width: 50%;
+  height: 55%;
+}
+
+/*Diferente para os diversos formularios*/
+.modal-content_ingrediente{
+  height: 64%;
+}
+
+#modal-content_pizza{
+  height: 145%;
+  margin: -3% auto 15% auto;
+}
+
+.alterar{
+  margin: 5% auto 5% auto;
+}
+
+/*Cruz para fechar*/
+.close {
+  position: absolute;
+  right: 27%;
+  top: 120px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #660000;
+}
+
+#close_pizza{
+  top: 20px;
+}
+
+.close:hover {
+  color: #343434;
+  cursor: pointer;
+}
+
+/*-------------- Pizza ------------*/
+#pizza_banner{
+  background-image: url("../pics/Banners/banner_pizza.jpg");
+  margin-bottom:  2%;
+}
+
+.pizza {
+  margin: 4%;
+  position: relative;
+  display: inline-block;
+}
+
+.pizza_name {
+  margin-top: 2%;
+  margin-bottom: 5%;
+  color: black;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pizza img {
+  width: 200px;
+  height: 200px;
+}
+
+.top{
+  margin-top: -2.5%;
+}
+
+.input_pizza label{
+  font-family: Montserrat;
+  text-align: left;
+  font-size: 18px;
+  color: #660000;
+}
+
+.input_pizza input[type=list], .input_pizza select, #opcoes option{
+  width: 50%;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid black;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  font-size: 15px;
+}
+
+output{
+  color: #660000;
+  font-size: 12px;
+}
+
+.input_pizza[type=range] {
+  width: 1px; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+.button_top{
+  margin-top: 2%;
+}
+
+.input_pizza  input[type=submit] {
+  font-size: 12px;
+	font-weight: bold;
+	color: white;
+  background-color: #700000;
+	border: none;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	transition-duration: 0.5s;
+  cursor: pointer;
+  width: 10%;
+  float:left;
+}
+
+.input_pizza input[type=submit]:hover{
+	text-decoration: none;
+	color: #aa9696;
+}
+
+/*-------------- Pizza Individual ------------*/
+.pag_pizza_individual{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2%;
+  margin-top: 5%;
+}
+
+.pag_pizza_individual img{
+  width: 350px;
+  height: 380px;
+  margin-left: -35%;
+}
+
+.form_pizza h1, .formulario_pizza h1{
+  font-size: 30px;
+}
+
+.form_pizza h3, .formulario_pizza h3{
+  color: #660000;
+  font-size: 20px;
+}
+
+.form_pizza label, .formulario_pizza label{
+  color: #660000;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#ingredientes, .form_pizza span, .form_pizza input[type=number], .form_pizza p, .form_pizza option,
+.formulario_pizza span, .formulario_pizza input[type=number], .formulario_pizza p, .formulario_pizza option{
+  color: black;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: Montserrat;
+}
+
+.form_pizza select, .formulario_pizza select{
+ border: 1px solid #989898;
+ padding: 5px;
+ text-align: center;
+ font-size: 16px;
+ font-family: Montserrat;
+}
+
+/*-------------- A minha conta - Painel ------------*/
+#conta_banner{
+  background-image: url("../pics/Banners/banner_conta.jpg");
+  margin-bottom:  2%;
+}
+
+.active{
+  font-weight: bold;
+}
+
+.column {
+  float: left;
+  padding: 15px;
+}
+
+.pag_conta{
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  vertical-align: middle;
+}
+
+/* Limpar float depois da linha. Caso contrario toda a pagina ficaria float*/
+.pag_conta::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.pag_conta p{
+  text-align: justify;
+}
+
+.menu {
+  width: 25%;
+}
+
+.content {
+  width: 75%;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-right: 1px solid #660000;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 8px;
+  color: #660000;
+}
+
+.menu li:hover {
+  color: #aa9696;;
+}
+
+/*-------------- A minha conta - Encomendas ------------*/
+.pag_conta table{
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 95%;
+}
+
+.pag_conta th, .pag_conta td{
+  border-bottom: 2px solid #660000;
+}
+
+#encomenda{
+  text-align: left;
+  padding-left: 10px;
+}
+
+.pag_conta td{
+  padding: 9px;
+}
+
+.pag_conta td{
+  text-align: center;
+}
+
+.hover_conta{
+  transition-duration: 0.2s;
+}
+.hover_conta:hover{
+  color: #aa9696;
+}
+
+/*-------------- A minha conta - Detalhes Encomenda ------------*/
+#tabela_detalhes_encomenda{
+  width: 85%;
+}
+
+.total_encomenda{
+  color: #660000;
+  text-align: right;
+}
+
+.titulo_detalhes_encomenda{
+  display: flex;
+  flex-direction: row;
+  color: #660000;
+  margin-bottom: 2%;
+}
+
+.titulo_detalhes_encomenda h1, #n_encomenda{
+  font-size: 20px;
+  color: #660000;
+  font-weight: normal;
+}
+
+#n_encomenda{
+  margin-bottom: 2%;
+}
+
+.titulo_detalhes_encomenda a{
+  margin-left: 40%;
+}
+
+.primeira_linha th{
+  border-top: 2px solid #660000;
+  padding: 1%;
+}
+
+.ultima_coluna{
+  width: 10%;
+}
+
+.segunda_coluna{
+  width: 60%;
+}
+
+/*-------------- A minha conta - Detalhes Conta ------------*/
+.pag_conta input[type=text], .pag_conta input[type=password]{
+  width: 70%;
+  padding-left: 3px;
+}
+
+/*-------------- A minha conta - Ingredientes ------------*/
+.pag_conta .button{
+  width: 20%;
+  margin-bottom: 2%;
+}
+
+.pag_conta .button_ingrediente{
+  width: 70%;
+  margin-bottom: 0%;
+  margin-left: 25%;
+}
+
+.pag_conta .center_left{
+  float: right;
+  margin-right: 5%;
+}
+
+.form_ingrediente label {
+  width:110px;
+  clear:left;
+  margin-top: 4%;
+  font-size: 16px;
+}
+
+.form_ingrediente input[type="text"], .form_ingrediente label, .form_pizza input[type="text"], .form_pizza label {
+  float:left;
+}
+
+.labels .ref{
+  width: 10%;
+}
+
+.pag_conta a{
+  padding-right: 5%;
+}
+
+/*-------------- A minha conta - Pizzas ------------*/
+.form_pizza label {
+  width:150px;
+  clear:left;
+  margin-top: 4%;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.form_pizza input[type="text"]{
+  width: 60%;
+}
+
+.form_pizza input[type="file"]{
+  margin-top: 3%;
+}
+
+.modal-content_pizza .button{
+  margin-top: 10%;
+}
+
+.checkbox_style{
+  display: table;
+  margin: 8% 5%;
+  font-size: 20px;
+  margin-bottom: 0%;
+}
+
+.checkbox_altura{
+  margin-bottom: 2%;
+}
+
+.checkbox_altura label{
+  float: none;
+  color: inherit;
+}
+
+/*-------------- A minha conta - List Estatísticas ------------*/
+
+
+.encomenda_box p{
+  font-size: 24px;
+  align-items: center;
+  text-align: center;
+  color:white;
+  font-weight: bold;
+  padding-top: 60px;
+  height: 140px;
+  width: 160px;
+  background-color:#660000;
+  margin-bottom: 5%;
+}
+
+.encomenda_text p{
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20%;
+  font-size: 14px;
+}
+
+.estatistica_text p {
+  margin: 2.5% 0%;
+  cursor: pointer;
+  text-decoration: underline;
+
+}
+.estatistica_text p:hover {
+
+  color: #aa9696;
+}
+#encomendas_por_dia, #encomenda_por_utilizador_id{
+  display: none;
+}
